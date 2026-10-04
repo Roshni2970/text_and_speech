@@ -1,5 +1,5 @@
 # Making Health Advice Clear
-> **Text Readability Analyzer** | Evaluating and simplifying complex health and medical literature using quantitative NLP metrics in Python.
+| Evaluating and simplifying complex health and medical literature using quantitative NLP metrics in Python.
 
 ---
 
