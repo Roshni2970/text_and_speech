@@ -1,33 +1,37 @@
-# Keyword Extractor
+# Finding Needles in the Text
 
-## Aim
-To develop a simple Keyword Extractor project using Python in a Jupyter Notebook.
+> An interactive Python notebook that extracts key information and terms from raw text and speech inputs.
 
-## Objective
-To understand basic text and speech analysis concepts through a small, practical implementation.
+---
 
-## Description
-Extract important keywords from a paragraph by removing common stop words.
+## 📌 Overview
 
-## Technologies Used
-- Python
-- Jupyter Notebook
-- Standard Python libraries
+**Finding Needles in the Text** is a practical implementation designed to explore basic text and speech analysis concepts. By stripping out high-frequency stop words and processing natural language inputs, this tool distills lengthy paragraphs into concise, meaningful keywords.
 
+---
 
-## Features
-- Simple and easy-to-understand implementation
-- Interactive input
-- Displays useful analysis results
-- Suitable for a college mini project
+## 🛠️ Built With
 
-## How to Run
-1. Open the `.ipynb` file in Jupyter Notebook, JupyterLab, or Google Colab.
-2. Run the cells from top to bottom.
-3. For speech projects, allow microphone access and install the required speech-recognition package if needed.
+| Component | Technology |
+|---|---|
+| **Language** | Python 3.x |
+| **Interface** | Jupyter Notebook / Google Colab |
+| **Dependencies** | Standard Libraries + SpeechRecognition |
 
-## Expected Output
-The notebook accepts text or speech input and displays the corresponding analysis result.
+---
 
-## Conclusion
-This project demonstrates the basic concepts of text or speech analysis using Python and can be extended with advanced NLP or speech-processing techniques.
+## ✨ Key Features
+
+- **Multi-Modal Input:** Accepts both typed text and live voice recordings.
+- **Stop-Word Removal:** Filters out common noise words to isolate critical terms.
+- **Interactive Execution:** Interactive cells allow quick testing with custom inputs.
+- **Lightweight:** No heavy deep learning dependencies required to get started.
+
+---
+
+## 📁 Project Structure
+
+```text
+├── Finding_Needles_in_the_Text.ipynb   # Main Jupyter notebook
+├── README.md                            # Project documentation
+└── requirements.txt                     # Dependencies (optional)
