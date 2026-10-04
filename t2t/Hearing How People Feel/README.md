@@ -1,33 +1,38 @@
-# Speech Sentiment Analysis
+# Hearing How People Feel
 
-## Aim
-To develop a simple Speech Sentiment Analysis project using Python in a Jupyter Notebook.
+> Convert voice input to text and determine the speaker's emotional sentiment using Python.
 
-## Objective
-To understand basic text and speech analysis concepts through a small, practical implementation.
+---
 
-## Description
-Convert speech to text and perform simple sentiment analysis on the recognized text.
+## 📌 Overview
 
-## Technologies Used
-- Python
-- Jupyter Notebook
-- Standard Python libraries
-- SpeechRecognition
+**Hearing How People Feel** is a speech sentiment analysis tool designed to bridge voice interaction and natural language understanding. By processing raw speech into text and running it through a sentiment engine, this notebook quantifies the emotional tone behind spoken words.
 
-## Features
-- Simple and easy-to-understand implementation
-- Interactive input
-- Displays useful analysis results
-- Suitable for a college mini project
+---
 
-## How to Run
-1. Open the `.ipynb` file in Jupyter Notebook, JupyterLab, or Google Colab.
-2. Run the cells from top to bottom.
-3. For speech projects, allow microphone access and install the required speech-recognition package if needed.
+## 🛠️ Tech Stack & Dependencies
 
-## Expected Output
-The notebook accepts text or speech input and displays the corresponding analysis result.
+| Category | Technology |
+|---|---|
+| **Language** | Python 3.x |
+| **Interface** | Jupyter Notebook / Google Colab |
+| **Speech Processing** | `SpeechRecognition`, `pyaudio` |
+| **NLP & Sentiment** | `TextBlob` / `NLTK` |
 
-## Conclusion
-This project demonstrates the basic concepts of text or speech analysis using Python and can be extended with advanced NLP or speech-processing techniques.
+---
+
+## ✨ Core Features
+
+- **Voice Capture:** Record speech live via system microphone input.
+- **Automated Transcription:** Convert acoustic signals into accurate text strings.
+- **Sentiment Scoring:** Compute polarity scores to identify positive, neutral, or negative feedback.
+- **Lightweight Design:** Easy-to-follow pipeline without requiring heavy deep-learning GPU setups.
+
+---
+
+## 📁 Project Structure
+
+```text
+├── Hearing_How_People_Feel.ipynb   # Main interactive notebook
+├── README.md                       # Project documentation
+└── requirements.txt                # Dependency list
