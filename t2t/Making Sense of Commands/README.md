@@ -1,33 +1,67 @@
-# Speech Command Analyzer
+# Making Sense of Commands
+> A voice-driven control pipeline that transcribes spoken audio and routes recognized commands to automated system actions.
 
-## Aim
-To develop a simple Speech Command Analyzer project using Python in a Jupyter Notebook.
+---
 
-## Objective
-To understand basic text and speech analysis concepts through a small, practical implementation.
+## 📌 Overview
 
-## Description
-Recognize simple spoken commands such as hello, start, stop, and exit.
+**Making Sense of Commands** is a lightweight voice recognition and command parsing tool implemented in Python. It bridges live audio recording with rule-based system execution by capturing vocal inputs, converting them to text via Automated Speech Recognition (ASR), and mapping key command keywords to specific functions (e.g., `START`, `STOP`, `PAUSE`, `EXIT`).
 
-## Technologies Used
-- Python
-- Jupyter Notebook
-- Standard Python libraries
-- SpeechRecognition
+This project serves as a foundational step toward building offline voice assistants, hands-free IoT interfaces, and voice-controlled accessibility tools.
 
-## Features
-- Simple and easy-to-understand implementation
-- Interactive input
-- Displays useful analysis results
-- Suitable for a college mini project
+---
 
-## How to Run
-1. Open the `.ipynb` file in Jupyter Notebook, JupyterLab, or Google Colab.
-2. Run the cells from top to bottom.
-3. For speech projects, allow microphone access and install the required speech-recognition package if needed.
+## 🎯 Aim & Objectives
 
-## Expected Output
-The notebook accepts text or speech input and displays the corresponding analysis result.
+- **Primary Goal:** Detect, parse, and execute predefined spoken commands from live microphone input or pre-recorded audio.
+- **Learning Objectives:**
+  - Understand real-time audio sampling and speech recognition APIs.
+  - Implement intent parsing and string normalization algorithms.
+  - Handle audio exception states (e.g., background noise, unknown commands, network timeouts).
 
-## Conclusion
-This project demonstrates the basic concepts of text or speech analysis using Python and can be extended with advanced NLP or speech-processing techniques.
+---
+
+## 🗣️ Supported Commands & Action Map
+
+The speech analyzer normalizes transcription strings (lowercasing, punctuation removal) and maps spoken triggers to predefined system routines:
+
+| Spoken Command | Trigger Terms | Executed Action |
+| :--- | :--- | :--- |
+| **Greeting** | `"hello"`, `"hi"`, `"hey"` | Initializes session & returns welcome feedback |
+| **Start** | `"start"`, `"begin"`, `"run"` | Triggers process execution / starts audio stream |
+| **Pause** | `"pause"`, `"wait"`, `"hold"` | Temporarily suspends active process |
+| **Stop** | `"stop"`, `"halt"`, `"cancel"` | Terminates current task execution |
+| **Exit** | `"exit"`, `"quit"`, `"bye"` | Safely closes the application/session |
+
+---
+
+## ✨ Key Features
+
+- **Real-Time Voice Recognition:** Captures live audio streams directly via system microphone.
+- **Command Intent Parser:** Matches spoken phrases against structured command rules using fuzzy and exact string matching.
+- **Ambient Noise Adjustment:** Calibrates microphone sensitivity against background noise prior to audio capture.
+- **Interactive Feedback Loop:** Provides immediate visual logging and console feedback upon command detection.
+- **Lightweight Architecture:** Runs seamlessly inside Jupyter environments without requiring heavy GPU frameworks.
+
+---
+
+## 🛠️ Tech Stack & Dependencies
+
+| Layer | Technology |
+| :--- | :--- |
+| **Programming Language** | Python 3.8+ |
+| **Environment** | Jupyter Notebook / Google Colab / VS Code |
+| **Speech Processing** | `SpeechRecognition` |
+| **Audio I/O** | `PyAudio` |
+| **System Libraries** | `os`, `sys`, `time` |
+
+---
+
+## 📁 Project Structure
+
+```text
+.
+├── Making_Sense_of_Commands.ipynb   # Main interactive notebook with recognition pipeline
+├── sample_audio/                   # Pre-recorded command test files (.wav)
+├── README.md                       # Project documentation
+└── requirements.txt                # Project dependency list
