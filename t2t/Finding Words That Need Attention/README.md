@@ -1,33 +1,37 @@
-# Speech Keyword Detector
+# Finding Words That Need Attention
 
-## Aim
-To develop a simple Speech Keyword Detector project using Python in a Jupyter Notebook.
+> Real-time speech-to-text transcription and key-phrase monitoring powered by Python.
 
-## Objective
-To understand basic text and speech analysis concepts through a small, practical implementation.
+---
 
-## Description
-Convert speech to text and check whether selected keywords were spoken.
+## 📌 Overview
 
-## Technologies Used
-- Python
-- Jupyter Notebook
-- Standard Python libraries
-- SpeechRecognition
+**Finding Words That Need Attention** is a practical speech analysis application designed to monitor spoken input for target words. By bridging microphone capture with automated speech recognition (ASR) engines, this project instantly flags essential words or triggers alerts based on custom interest lists.
 
-## Features
-- Simple and easy-to-understand implementation
-- Interactive input
-- Displays useful analysis results
-- Suitable for a college mini project
+---
 
-## How to Run
-1. Open the `.ipynb` file in Jupyter Notebook, JupyterLab, or Google Colab.
-2. Run the cells from top to bottom.
-3. For speech projects, allow microphone access and install the required speech-recognition package if needed.
+## 🛠️ Tech Stack & Dependencies
 
-## Expected Output
-The notebook accepts text or speech input and displays the corresponding analysis result.
+| Category | Technology |
+|---|---|
+| **Language** | Python 3.x |
+| **Runtime** | Jupyter Notebook / Google Colab |
+| **Libraries** | `SpeechRecognition`, `pyaudio` |
 
-## Conclusion
-This project demonstrates the basic concepts of text or speech analysis using Python and can be extended with advanced NLP or speech-processing techniques.
+---
+
+## ✨ Core Features
+
+- **Audio Acquisition:** Captures audio directly through your system's microphone.
+- **Automated Transcription:** Processes raw audio signals into readable text strings.
+- **Target Phrase Matching:** Checks transcribed output against specified watch-words.
+- **Modular Pipeline:** Easily swap speech recognition backends or update keyword targets.
+
+---
+
+## 📁 Project Structure
+
+```text
+├── Finding_Words_That_Need_Attention.ipynb   # Main interactive notebook
+├── README.md                                  # Project documentation
+└── requirements.txt                           # Dependency specifications
